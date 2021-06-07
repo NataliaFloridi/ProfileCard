@@ -1,4 +1,5 @@
-$main-color: hsl(32, 100%, 80%);
+$main-color: #e3c5ae;
+$shadow-color: #998c7a;
 $primary-color:rgb(0, 0, 0);
 $secondary-color: #696869;
 $back-color:#fff;
@@ -50,7 +51,7 @@ $lg-device: 1440px;
     }
 
     }
-    @else if $size == lg {
+    @else if $size == sm {
         @media screen and (max-width: $md-device - 1) {
             @content;
         }

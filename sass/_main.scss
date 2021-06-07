@@ -4,22 +4,25 @@
     .card {
         background-color: $back-color;
         border-radius:5%;
+        box-shadow: 5px 5px 5px 0 $shadow-color;
         height: 500px;
-        max-width: 450px;
         margin: 150px auto;
-        box-shadow: 5px 5px 5px 0 rgb(156, 89, 49);
+        max-width: 450px;
+        @include device(sm) {
+            max-width: 360px;
+        }
         
         header img{
-            background-image: url('../images/pattern.jpg') ;
+            background-image: url('../images/pattern.jpg');
             border-radius: 20px 20px 0 0;
             height:200px;
             width:500px;
         }
         section img {
-            height: 180px;
-            border: 7px solid $back-color;
+            border: 7px solid #edd9c3;
             border-collapse: collapse;
             border-radius: 50%;
+            height: 180px;
             margin: -120px auto;
         }
         main {
@@ -38,9 +41,10 @@
             .info{
                 display: flex;
                 justify-content: space-around;
+
                 div {
                     img{
-                        height: 45px;
+                        height: 40px;
                         margin: 20px auto 0;
                     }
                     p{
@@ -56,9 +60,12 @@
                         &:hover {
                             color: $main-color;
                             transition: .3s;
-
                         }
-                       
+                    }
+                    @include device(sm) {
+                        p, a {
+                            font-size: 0.95em;
+                        }
                     }
                 }
             }
@@ -66,10 +73,10 @@
     }
     
     footer {
-        font-family: type-1(11);
-        text-align: center; 
-        justify-content: center;
         color: $secondary-color;
+        font-family: type-1(11);
+        justify-content: center;
+        text-align: center; 
         text-decoration: none;
     }
 }

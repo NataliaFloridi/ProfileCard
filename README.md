@@ -13,8 +13,7 @@ There are links to contact: LinkedIn, e-mail, and GitHub.
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://nataliafloridi.github.io/ProfileCard/](https://nataliafloridi.github.io/ProfileCard/)
 
 ### Built with
 

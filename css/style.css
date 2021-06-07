@@ -13,16 +13,22 @@ img {
 }
 
 .main {
-  background-color: #ffcf99;
+  background-color: #e3c5ae;
 }
 
 .main .card {
   background-color: #fff;
   border-radius: 5%;
+  box-shadow: 5px 5px 5px 0 #998c7a;
   height: 500px;
-  max-width: 450px;
   margin: 150px auto;
-  box-shadow: 5px 5px 5px 0 #9c5931;
+  max-width: 450px;
+}
+
+@media screen and (max-width: 759px) {
+  .main .card {
+    max-width: 360px;
+  }
 }
 
 .main .card header img {
@@ -33,10 +39,10 @@ img {
 }
 
 .main .card section img {
-  height: 180px;
-  border: 7px solid #fff;
+  border: 7px solid #edd9c3;
   border-collapse: collapse;
   border-radius: 50%;
+  height: 180px;
   margin: -120px auto;
 }
 
@@ -66,7 +72,7 @@ img {
 }
 
 .main .card main .info div img {
-  height: 45px;
+  height: 40px;
   margin: 20px auto 0;
 }
 
@@ -86,14 +92,20 @@ img {
 }
 
 .main .card main .info div a:hover {
-  color: #ffcf99;
+  color: #e3c5ae;
   transition: .3s;
 }
 
+@media screen and (max-width: 759px) {
+  .main .card main .info div p, .main .card main .info div a {
+    font-size: 0.95em;
+  }
+}
+
 .main footer {
-  font-family: type-1(11);
-  text-align: center;
-  justify-content: center;
   color: #696869;
+  font-family: type-1(11);
+  justify-content: center;
+  text-align: center;
   text-decoration: none;
 }
