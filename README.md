@@ -9,7 +9,7 @@ There are links to contact: LinkedIn, e-mail, and GitHub.
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![img](./screenshot.jpg)
 
 ### Links
 
