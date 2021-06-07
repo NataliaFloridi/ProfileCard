@@ -12,86 +12,88 @@ img {
   box-sizing: border-box;
 }
 
-.background {
-  background-color: #19a2ae;
-  border: 1px solid #19a2ae;
+.main {
+  background-color: #ffcf99;
 }
 
-.card {
+.main .card {
   background-color: #fff;
   border-radius: 5%;
-  height: 430px;
-  margin: 150px auto 140px;
-  max-width: 400px;
+  height: 500px;
+  max-width: 450px;
+  margin: 150px auto;
+  box-shadow: 5px 5px 5px 0 #9c5931;
 }
 
-.card header img {
+.main .card header img {
+  background-image: url("../images/pattern.jpg");
   border-radius: 20px 20px 0 0;
-  width: 400px;
+  height: 200px;
+  width: 500px;
 }
 
-.card section img {
-  border: 5px solid #fff;
+.main .card section img {
+  height: 180px;
+  border: 7px solid #fff;
+  border-collapse: collapse;
   border-radius: 50%;
-  margin: -50px  auto;
+  margin: -120px auto;
 }
 
-.card main h1 {
+.main .card main h1 {
   font-family: "Kumbh Sans", sans-serif;
-  font-size: 1.125em;
-  line-height: 1.66667em;
+  font-size: 1.75em;
+  line-height: 1.36364em;
   border-bottom: 1px solid #969696;
   font-weight: 700;
   margin: 50px auto 5px;
-  padding: 20px 0 25px;
+  padding: 72px 25px 30px 0;
   text-align: center;
 }
 
-.card main h1 span {
+.main .card main h1 span {
   font-family: "Kumbh Sans", sans-serif;
-  font-size: 0.6875em;
-  line-height: 1.45455em;
+  font-size: 1.125em;
+  line-height: 1.66667em;
   color: #969696;
   font-weight: 400;
-  font-size: 1em;
+  font-size: 1rem;
 }
 
-.card main h1 span:last-of-type {
-  font-family: "Kumbh Sans", sans-serif;
-  font-size: 0.6875em;
-  line-height: 1.45455em;
-  color: #969696;
-  font-weight: 400;
+.main .card main .info {
+  display: flex;
+  justify-content: space-around;
 }
 
-.card main p {
+.main .card main .info div img {
+  height: 45px;
+  margin: 20px auto 0;
+}
+
+.main .card main .info div p {
   font-family: "Kumbh Sans", sans-serif;
   font-size: 1.125em;
   line-height: 1.66667em;
   display: inline-block;
   font-weight: 700;
-  padding: 20px 33px 20px;
+  padding: 0 33px;
   text-align: center;
 }
 
-.card main p:first-of-type {
-  margin-left: 22px;
+.main .card main .info div a {
+  color: black;
+  text-decoration: none;
 }
 
-.card main p span {
-  font-family: "Kumbh Sans", sans-serif;
-  font-size: 0.6875em;
-  line-height: 1.45455em;
-  color: #969696;
-  font-weight: 400;
+.main .card main .info div a:hover {
+  color: #ffcf99;
+  transition: .3s;
 }
 
-footer {
+.main footer {
   font-family: type-1(11);
   text-align: center;
-}
-
-footer a, footer p {
-  color: #3e52a3;
+  justify-content: center;
+  color: #696869;
   text-decoration: none;
 }

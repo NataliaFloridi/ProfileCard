@@ -1,12 +1,9 @@
-$main-color: hsl(185, 75%, 39%);
-$primary-color:hsl(229, 23%, 23%);
-$secondary-color: hsl(227, 10%, 46%);
+$main-color: hsl(32, 100%, 80%);
+$primary-color:rgb(0, 0, 0);
+$secondary-color: #696869;
+$back-color:#fff;
 $last-color:hsl(0, 0%, 59%);
-$a-color:hsl(228, 45%, 44%); 
 $font-1:'Kumbh Sans', sans-serif;
-
-
-// - Weights: 400, 700
 
 @function em($pixel, $contexto: 16) {
     @return $pixel / $contexto + em;
@@ -21,12 +18,17 @@ $font-1:'Kumbh Sans', sans-serif;
     }
     @else if $size == 16 {
         font-size: em(16);
-        line-height: em(16, 14);
+        line-height: em(16, 16);
     }
 
     @else if $size == 18 {
         font-size: em(18);
         line-height: em(30, 18);
+    }
+    
+    @else if $size == 22 {
+        font-size: em(28);
+        line-height: em(30, 22);
     }
 }
 
@@ -54,9 +56,8 @@ $lg-device: 1440px;
         }
     }
 }
-
 @mixin span {
-    @include type-1(11);
+    @include type-1(18);
     color: $last-color;
     font-weight:400;
 }
