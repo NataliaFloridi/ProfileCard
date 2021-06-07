@@ -1,0 +1,60 @@
+.background {
+    background-color: $main-color;
+    border:1px solid $main-color ;
+}
+ 
+.card {
+    background-color: #fff;
+    border-radius:5%;
+    height: 430px;
+    margin: 150px auto 140px;
+    max-width: 400px;
+    header img{
+        border-radius: 20px 20px 0 0;
+        width: 400px;
+    }
+    section img {
+        border: 5px solid #fff;
+        border-radius: 50%;
+        margin: -50px  auto;
+    }
+    main {
+        h1{
+            @include type-1(18);
+            border-bottom: 1px solid $last-color;
+            font-weight: 700;
+            margin: 50px auto 5px;
+            padding: 20px 0 25px;
+            text-align: center;
+            span {
+                @include span;
+                font-size: 1em;
+                &:last-of-type {
+                    @include span;
+                }
+            }
+        }
+        p {
+            @include type-1(18);
+            display: inline-block;
+            font-weight: 700;
+            padding: 20px 33px 20px;
+            text-align: center;
+            &:first-of-type {
+                margin-left: 22px;
+            }
+            span {
+                @include span;
+            }
+        }
+    }
+}
+
+footer { 
+    font-family: type-1(11);
+    text-align: center; 
+    a, p { 
+        color: $a-color;
+        text-decoration: none;
+    }
+}

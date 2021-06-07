@@ -1,0 +1,62 @@
+$main-color: hsl(185, 75%, 39%);
+$primary-color:hsl(229, 23%, 23%);
+$secondary-color: hsl(227, 10%, 46%);
+$last-color:hsl(0, 0%, 59%);
+$a-color:hsl(228, 45%, 44%); 
+$font-1:'Kumbh Sans', sans-serif;
+
+
+// - Weights: 400, 700
+
+@function em($pixel, $contexto: 16) {
+    @return $pixel / $contexto + em;
+}
+
+@mixin type-1($size) {
+    font-family: $font-1;
+
+    @if $size == 11 {
+        font-size: em(11);
+        line-height: em(16, 11);
+    }
+    @else if $size == 16 {
+        font-size: em(16);
+        line-height: em(16, 14);
+    }
+
+    @else if $size == 18 {
+        font-size: em(18);
+        line-height: em(30, 18);
+    }
+}
+
+$sm-device: 375px;
+$md-device: 760px;
+$lg-device: 1440px;
+
+@mixin device ($size) {
+
+    @if $size == lg {
+        @media screen and (min-width: #{$lg-device}) {
+            @content;
+        }
+    }
+
+    @else if $size == md {
+        @media screen and (min-width: #{$md-device}) and (max-width: $lg-device - 1) {
+            @content;
+    }
+
+    }
+    @else if $size == lg {
+        @media screen and (max-width: $md-device - 1) {
+            @content;
+        }
+    }
+}
+
+@mixin span {
+    @include type-1(11);
+    color: $last-color;
+    font-weight:400;
+}
