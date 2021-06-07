@@ -4,7 +4,7 @@ Improve my coding skills by building a profile card.
 
 ## What is the project?
 
-Build a profile card with a phot, that can be accessed on line using in HTML5, using SASS, CSS, 
+Create a profile card with a photo, that can be accessed on line using HTML5, SASS, CSS.
 There are links to contact: LinkedIn, e-mail, and GitHub.
 
 ### Screenshot
@@ -25,4 +25,4 @@ There are links to contact: LinkedIn, e-mail, and GitHub.
 ## Author
 
 - LinkedIn - [Natália Floridi](https://www.linkedin.com/in/natalia-floridi/)
-- GitHub- [@NataliaFloridi](https://github.com/NataliaFloridi/)
+- GitHub- [Natalia Floridi](https://github.com/NataliaFloridi/)
