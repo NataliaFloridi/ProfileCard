@@ -11,7 +11,6 @@
         @include device(sm) {
             max-width: 360px;
         }
-        
         header img{
             background-image: url('../images/pattern.jpg');
             border-radius: 20px 20px 0 0;
@@ -30,8 +29,8 @@
                 @include type-1(22);
                 border-bottom: 1px solid $last-color;
                 font-weight: 700;
-                margin: 50px auto 5px;
-                padding:72px 25px 30px 0;
+                margin: 50px auto 0;
+                padding:72px 0 30px 2px;
                 text-align: center;
                 span {
                     @include span;
@@ -41,7 +40,7 @@
             .info{
                 display: flex;
                 justify-content: space-around;
-
+                
                 div {
                     img{
                         height: 40px;
